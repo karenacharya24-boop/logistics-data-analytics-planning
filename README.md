@@ -1,19 +1,19 @@
-# logistics-data-analytics-planning
-# Logistics Data Analytics - Strategic Planning & Exploration
+# Logistics Data Analytics Internship
 
-## Overview
-This repository contains the strategic planning framework and exploratory scripts for optimizing last-mile delivery operations, transit time estimations, and zone allocation.
+Repository containing milestones, scripts, and analytical workflows for the Logistics Data Analyst Internship track.
 
-## Key Performance Indicators (KPIs)
-- **On-Time Delivery (OTD) Rate:** Target >= 95%
-- **Cost Per Mile (CPM):** Direct transit expenditure efficiency
-- **Average Transit Deviation:** Discrepancy between estimated vs. actual delivery times
+---
 
-## Methodology
-1. **Data Preprocessing & EDA:** Cleans transit logs and maps traffic density metrics.
-2. **Spatial Clustering (K-Means):** Groups drop-off coordinates into micro-zones for optimized routing.
-3. **Predictive Modeling (Random Forest):** Forecasts delivery durations based on load weight, distance, and congestion scores.
+## Week 1: Strategic Planning & Data Exploration
+* **Objective:** Establishing operational KPIs (OTD, CPM, Transit Deviation) and initial analytical roadmaps.
+* **Code:** `main.py` — Delivery zone clustering (K-Means) and baseline transit time regression (Random Forest).
 
-## Execution
-```bash
-python main.py
+---
+
+## Week 2: Data Collection, Cleaning & Preprocessing
+* **Objective:** Building automated pipelines to clean raw multi-modal shipment telemetry.
+* **Key Techniques:**
+  * **Missing Value Imputation:** Median imputation for continuous variables and mode imputation for categorical fields.
+  * **Outlier Handling:** Interquartile Range (IQR) boundary clipping to handle sensor anomalies.
+  * **Feature Engineering & Normalization:** Ordinal/One-Hot encoding and Min-Max scaling (`[0, 1]`).
+* **Code:** `week2_preprocessing.py`
